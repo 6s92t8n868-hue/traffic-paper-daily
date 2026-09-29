@@ -39,12 +39,26 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 
 <div class="stats">
 <div class="stat"><b>5</b>近 7 天论文总数</div>
-<div class="stat"><b>3</b>交通事故与道路安全</div>
-<div class="stat"><b>2</b>交通预测</div>
+<div class="stat"><b>5</b>交通事故与道路安全</div>
+<div class="stat"><b>0</b>交通预测</div>
 <div class="stat"><b>0</b>可解释性 × 交通（SHAP）</div>
-<div class="stat"><b>2026-09-28</b>最后更新</div>
+<div class="stat"><b>2026-09-29</b>最后更新</div>
 </div>
-<h2>交通事故与道路安全（3 篇）</h2>
+<h2>交通事故与道路安全（5 篇）</h2>
+<div class="paper">
+<h3><a href="http://arxiv.org/abs/2609.32944v1" target="_blank">Synthetic Thermal Image Generation for Real-Time Animal Detection Under Low-Visibility Conditions</a></h3>
+<div class="authors">James Momoh, Khandaker Mamun Ahmed</div>
+<div class="tags"><span class="tag date">2026-09-26</span><span class="tag">cs.CV</span></div>
+<details><summary>摘要</summary><div class="abs">Wildlife-vehicle collisions remain a significant road safety concern, particularly during nighttime and low-visibility conditions when RGB-based perception systems are often unreliable. Thermal imaging offers a promising alternative for detecting animals under poor illumination. However, the limited availability of annotated infrared animal datasets restricts the development of robust deep learning-based detection models. This paper investigates synthetic thermal image generation as a scalable approach for real-time animal detection under low-visibility conditions. A subset of 514 annotated visible-spectrum animal images from the NTLNP dataset is translated into synthetic thermal representations using CycleGAN-Turbo, while a limited real thermal dataset of 60 images is expanded through thermal-focused augmentation. Multiple object detection architectures, including YOLOv8, YOLOv9, YOLOv10, and RT-DETR, are trained independently on synthetic and real thermal datasets and evaluated using precision, recall, mAP@0.5, mAP@0.5:0.95, model size, and inference latency. Experimental results show that synthetic thermal images provide competitive detection performance, with RT-DETR achieving the highest synthetic-data mAP@0.5 of 0.9613. Models trained on augmented real thermal data achieve the strongest overall performance, with YOLOv10s obtaining 0.9879 mAP@0.5 and 0.9571 mAP@0.5:0.95. Computational analysis further indicates that lightweight YOLO variants provide favorable inference latency, supporting their potential for real-time deployment. These findings demonstrate that synthetic thermal imagery can reduce dependence on scarce infrared datasets and support the development of efficient animal detection systems for future vehicle-mounted wildlife collision mitigation applications.</div></details>
+<div class="links"><a href="http://arxiv.org/abs/2609.32944v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2609.32944v1" target="_blank">PDF</a></div>
+</div>
+<div class="paper">
+<h3><a href="http://arxiv.org/abs/2609.32811v1" target="_blank">Progressive Risk Estimation for Accident Anticipation</a></h3>
+<div class="authors">Samet Hicsonmez, Eray Çakar, Nermin Samet, Fatma Güney</div>
+<div class="tags"><span class="tag date">2026-09-26</span><span class="tag">cs.CV</span></div>
+<details><summary>摘要</summary><div class="abs">Accident anticipation aims to recognize anomalous driving cues before a crash while avoiding false alarms during normal driving. Existing approaches typically formulate this task as binary classification, focusing on whether an accident will occur rather than when it will occur. We propose PRE-ACT, a framework that models accident risk as a continuously evolving signal that increases as the crash approaches. By explicitly enforcing temporal ordering and distance-to-accident awareness, our method progressively raises risk while suppressing premature alarms, leading to significant improvements on MM-AU subsets and Nexar. We further introduce a Separation Score to evaluate the global behavior of predicted risk curves beyond local temporal windows. Code and visualizations are available at https://github.com/giddyyupp/PRE-ACT.</div></details>
+<div class="links"><a href="http://arxiv.org/abs/2609.32811v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2609.32811v1" target="_blank">PDF</a></div>
+</div>
 <div class="paper">
 <h3><a href="http://arxiv.org/abs/2609.30107v1" target="_blank">Smartphone-Based Method for Automated Speed Enforcement</a></h3>
 <div class="authors">Keya Li, Jahnavi Malagavalli, Lamha Goel, Tong Wang 等</div>
@@ -66,21 +80,8 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <details><summary>摘要</summary><div class="abs">End-to-end (E2E) driving policies have progressed rapidly on open-loop (OL) benchmarks, yet OL evaluation cannot reveal whether a policy withstands compounding errors, recovers from failures, or interacts safely with surrounding actors. We introduce NavSafe-$\infty$, a photorealistic closed-loop (CL) benchmark of 280 scenarios spanning 28 event types, each with success and failure criteria defined within a structured traffic-safety taxonomy, which yields category-level capability scores for Traffic Crashes, Vulnerable Road User Crashes, Traffic Violations, and Traffic Incidents. Evaluating 20 E2E policies, we find that OL gains do not reliably transfer to CL safety. Analyzing two common remedies further shows that passive demonstration perturbation helps mainly when CL rollouts stay near its perturbed training states, and that OL reinforcement-learning fine-tuning exhibits reward hacking by trading safety margin for ego progress, which CL feedback amplifies into compounding safety-critical errors. Together, these results demonstrate the blind spot of OL benchmarks indicating CL safety success. The benchmark and an extensible toolbox for customizable event curation and policy diagnosis will be open-sourced and maintained to facilitate future research.</div></details>
 <div class="links"><a href="http://arxiv.org/abs/2609.26618v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2609.26618v1" target="_blank">PDF</a></div>
 </div>
-<h2>交通预测（2 篇）</h2>
-<div class="paper">
-<h3><a href="http://arxiv.org/abs/2609.27637v1" target="_blank">Learning Local Heterogeneity and Cross-Region Context for Large-Scale Traffic Forecasting</a></h3>
-<div class="authors">Qi Feng, Zidong Wang, Bo Li, Xiaoguang Gao 等</div>
-<div class="tags"><span class="tag date">2026-09-23</span><span class="tag">cs.LG</span><span class="tag">cs.AI</span></div>
-<details><summary>摘要</summary><div class="abs">Traffic flow forecasting is essential to intelligent transportation systems. Large-scale traffic forecasting requires jointly modeling local spatial dependencies and cross-region context.Spatial dependencies between geographically neighboring nodes are heterogeneous due to differences in road identity and travel direction, while acquiring global information through allpairs node interactions incurs substantial computational costs. Therefore, capturing local heterogeneity while efficiently acquiring long-range context remains an important challenge in largescale traffic forecasting. To address these challenges, we propose LoReST, a Local-Region Spatial Temporal network that models spatial dependencies at two complementary granularities: node neighborhoods and road network regions. Specifically, relation-aware local aggregation captures heterogeneous dependencies within geographic neighborhoods through road and direction specific feature transformations. Cross-region interaction constructs region representations through mean pooling, exchanges long range context via inter-region attention, and broadcasts it back to nodes. By integrating local information aggregation with crossregion interaction, LoReST is able to effectively achieve spatial dependency learning in large-scale road networks. Experiments on four datasets of the LargeST benchmark show average relative reductions of 4.78%, 3.60%, and 5.75% in MAE, RMSE, and MAPE, respectively.</div></details>
-<div class="links"><a href="http://arxiv.org/abs/2609.27637v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2609.27637v1" target="_blank">PDF</a></div>
-</div>
-<div class="paper">
-<h3><a href="http://arxiv.org/abs/2609.25777v1" target="_blank">Disentangling Heterogeneous Traffic Dynamics for Multi-Step Traffic Forecasting via Adaptive Spectral Decomposition</a></h3>
-<div class="authors">Zijun Huang, Chenrui Fu, Wenhao Wang, Xiaochuan Gou 等</div>
-<div class="tags"><span class="tag date">2026-09-22</span><span class="tag">cs.LG</span></div>
-<details><summary>摘要</summary><div class="abs">Accurate multi-step traffic forecasting remains challenging because observed traffic signals contain heterogeneous temporal dynamics with different characteristics and levels of predictability. Existing approaches typically model these dynamics within a unified representation or rely on predefined decomposition rules, which may limit their ability to flexibly separate persistent patterns from rapidly varying fluctuations. To address this issue, we propose the Adaptive Decomposition Network (ADNet), a component-specific forecasting framework that adaptively disentangles traffic dynamics into dominant and residual components. ADNet introduces a learnable complementary spectral decomposition mechanism that determines the contribution of each frequency bin to the two components. Unlike hard frequency partitioning, every frequency bin can contribute to both components with different learned proportions, allowing the decomposition to be optimized jointly with the forecasting objective. The reconstructed components are then modeled by two dedicated spatiotemporal forecasting branches, and their predictions are integrated to generate the final multi-step forecast. Experiments on the Alameda and Orange regions of the TraffiDent dataset show that ADNet achieves the best performance in 20 of the 24 reported region-horizon-metric comparisons, with particularly clear gains at longer forecasting horizons. Capacity-controlled ablation experiments further show that the learnable decomposition substantially outperforms a fixed decomposition and provides additional improvements beyond the dual-branch architecture alone. These results demonstrate the effectiveness of adaptive decomposition and component-specific modeling for multi-step traffic forecasting.</div></details>
-<div class="links"><a href="http://arxiv.org/abs/2609.25777v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2609.25777v1" target="_blank">PDF</a></div>
-</div>
+<h2>交通预测（0 篇）</h2>
+<div class="empty">近 7 天没有新论文</div>
 <h2>可解释性 × 交通（SHAP）（0 篇）</h2>
 <div class="empty">近 7 天没有新论文</div>
 <footer>由 GitHub Actions 每日自动抓取生成 · 关键词可在仓库 scripts/fetch_arxiv.py 中修改</footer>
