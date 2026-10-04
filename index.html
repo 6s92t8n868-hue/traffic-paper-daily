@@ -38,51 +38,18 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <p class="meta">事故预测 · 道路安全 · 交通预测 · SHAP 可解释性 &nbsp;|&nbsp; 数据源 arXiv，每日自动更新</p>
 
 <div class="stats">
-<div class="stat"><b>5</b>近 7 天论文总数</div>
-<div class="stat"><b>4</b>交通事故与道路安全</div>
+<div class="stat"><b>0</b>近 7 天论文总数</div>
+<div class="stat"><b>0</b>交通事故与道路安全</div>
 <div class="stat"><b>0</b>交通预测</div>
-<div class="stat"><b>1</b>可解释性 × 交通（SHAP）</div>
-<div class="stat"><b>2026-10-03</b>最后更新</div>
+<div class="stat"><b>0</b>可解释性 × 交通（SHAP）</div>
+<div class="stat"><b>2026-10-04</b>最后更新</div>
 </div>
-<h2>交通事故与道路安全（4 篇）</h2>
-<div class="paper">
-<h3><a href="http://arxiv.org/abs/2609.37266v1" target="_blank">Evidence Over Ideology: A Quantitative Assessment of LTNs and Blanket 20 mph Regimes in London</a></h3>
-<div class="authors">Stylianos Kampakis</div>
-<div class="tags"><span class="tag date">2026-09-29</span><span class="tag">stat.OT</span></div>
-<details><summary>摘要</summary><div class="abs">We evaluate the road safety implications of Low Traffic Neighbourhoods (LTNs) and blanket 20 mph speed limits in London using injury-collision records (2020-2024). Because London implemented 20 mph limits primarily via sign-only orders without physical traffic calming, this work evaluates the blanket statutory model rather than lower urban speeds in principle. For LTNs, we apply a causal pipeline combining naive pre/post comparisons, Empirical Bayes shrinkage for Regression to the Mean (RTM), and spatial Difference-in-Differences. Naive comparisons suggest substantial crash reductions, but Empirical Bayes adjustment reveals much of this reflects mean reversion. After correction, only one zone exhibits a statistically significant inside-area reduction. We find no consistent evidence of boundary-road crash displacement nor uniform inside safety gains. Given the modest corrected benefits, small journey-time increases on boundary roads (approximately 10 seconds per vehicle) monetarily negate safety gains. For 20 mph versus 30 mph roads, five associational methods across 14 contexts show that the aggregate difference in the fatal or serious (KSI) collision share is negligible (0.6 percentage points). Controlling the false discovery rate, four contexts display robustly higher KSI shares on 20 mph roads: A-roads, junctions, pedestrian crossings, and single carriageways, with no context showing a robust reduction. In movement corridors where road geometry cues higher speeds, sign-only limits fail to self-enforce. These findings highlight a structural &quot;wrong-road problem.&quot; Indiscriminate sign-only limits impose economic drag without proportionate safety returns. Transport authorities should move away from blanket statutory defaults and return to targeted physical engineering on high-harm corridors.</div></details>
-<div class="links"><a href="http://arxiv.org/abs/2609.37266v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2609.37266v1" target="_blank">PDF</a></div>
-</div>
-<div class="paper">
-<h3><a href="http://arxiv.org/abs/2609.35917v1" target="_blank">Replication Failure and Trivial Baselines in Road-Level Crash Prediction</a></h3>
-<div class="authors">Maurya Patel</div>
-<div class="tags"><span class="tag date">2026-09-28</span><span class="tag">cs.LG</span></div>
-<details><summary>摘要</summary><div class="abs">Graph neural networks are increasingly applied to road-level crash prediction, but the stability of their reported gains has received little scrutiny. We independently reconstruct the data pipeline of a recent uncertainty-aware model and evaluate eleven of its design decisions across three London boroughs under an expanding-window protocol. Four survive replication on a second borough; seven do not, and four of those reverse sign rather than attenuate. Multi-seed evaluation is decisive: one effect reverses sign between random seeds within a single borough, and the reference architecture exhibits per-borough seed spreads of up to 35.7 points against 4 points for ours. We further compare both networks against a parameter-free baseline that ranks segments by cumulative past crash count. At matched history depth our model is statistically indistinguishable from that baseline ($-0.90$ points, $p=0.61$), and the reference architecture loses to it on 18 of 18 held-out windows ($-17.37$, $p&lt;10^{-6}$). Sweeping the baseline's lookback horizon shows it spans 22.71% to 83.94% accuracy on that variable alone, and that every published figure in this line of work is matched by the baseline at a horizon of one to five years. We argue that the apparent margin of graph networks over historical baselines in this task is substantially an artefact of the short horizons those baselines were computed over, and recommend horizon-matched baselines and multi-seed reporting as minimum practice.</div></details>
-<div class="links"><a href="http://arxiv.org/abs/2609.35917v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2609.35917v1" target="_blank">PDF</a></div>
-</div>
-<div class="paper">
-<h3><a href="http://arxiv.org/abs/2609.32944v1" target="_blank">Synthetic Thermal Image Generation for Real-Time Animal Detection Under Low-Visibility Conditions</a></h3>
-<div class="authors">James Momoh, Khandaker Mamun Ahmed</div>
-<div class="tags"><span class="tag date">2026-09-26</span><span class="tag">cs.CV</span></div>
-<details><summary>摘要</summary><div class="abs">Wildlife-vehicle collisions remain a significant road safety concern, particularly during nighttime and low-visibility conditions when RGB-based perception systems are often unreliable. Thermal imaging offers a promising alternative for detecting animals under poor illumination. However, the limited availability of annotated infrared animal datasets restricts the development of robust deep learning-based detection models. This paper investigates synthetic thermal image generation as a scalable approach for real-time animal detection under low-visibility conditions. A subset of 514 annotated visible-spectrum animal images from the NTLNP dataset is translated into synthetic thermal representations using CycleGAN-Turbo, while a limited real thermal dataset of 60 images is expanded through thermal-focused augmentation. Multiple object detection architectures, including YOLOv8, YOLOv9, YOLOv10, and RT-DETR, are trained independently on synthetic and real thermal datasets and evaluated using precision, recall, mAP@0.5, mAP@0.5:0.95, model size, and inference latency. Experimental results show that synthetic thermal images provide competitive detection performance, with RT-DETR achieving the highest synthetic-data mAP@0.5 of 0.9613. Models trained on augmented real thermal data achieve the strongest overall performance, with YOLOv10s obtaining 0.9879 mAP@0.5 and 0.9571 mAP@0.5:0.95. Computational analysis further indicates that lightweight YOLO variants provide favorable inference latency, supporting their potential for real-time deployment. These findings demonstrate that synthetic thermal imagery can reduce dependence on scarce infrared datasets and support the development of efficient animal detection systems for future vehicle-mounted wildlife collision mitigation applications.</div></details>
-<div class="links"><a href="http://arxiv.org/abs/2609.32944v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2609.32944v1" target="_blank">PDF</a></div>
-</div>
-<div class="paper">
-<h3><a href="http://arxiv.org/abs/2609.32811v1" target="_blank">Progressive Risk Estimation for Accident Anticipation</a></h3>
-<div class="authors">Samet Hicsonmez, Eray Çakar, Nermin Samet, Fatma Güney</div>
-<div class="tags"><span class="tag date">2026-09-26</span><span class="tag">cs.CV</span></div>
-<details><summary>摘要</summary><div class="abs">Accident anticipation aims to recognize anomalous driving cues before a crash while avoiding false alarms during normal driving. Existing approaches typically formulate this task as binary classification, focusing on whether an accident will occur rather than when it will occur. We propose PRE-ACT, a framework that models accident risk as a continuously evolving signal that increases as the crash approaches. By explicitly enforcing temporal ordering and distance-to-accident awareness, our method progressively raises risk while suppressing premature alarms, leading to significant improvements on MM-AU subsets and Nexar. We further introduce a Separation Score to evaluate the global behavior of predicted risk curves beyond local temporal windows. Code and visualizations are available at https://github.com/giddyyupp/PRE-ACT.</div></details>
-<div class="links"><a href="http://arxiv.org/abs/2609.32811v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2609.32811v1" target="_blank">PDF</a></div>
-</div>
+<h2>交通事故与道路安全（0 篇）</h2>
+<div class="empty">近 7 天没有新论文</div>
 <h2>交通预测（0 篇）</h2>
 <div class="empty">近 7 天没有新论文</div>
-<h2>可解释性 × 交通（SHAP）（1 篇）</h2>
-<div class="paper">
-<h3><a href="http://arxiv.org/abs/2609.35152v1" target="_blank">Coordinated Lane-Level Variable Speed Limits and Ramp Metering for Successive Weaving Segments Considering Merging/Diverging Risks: A Hybrid Model Predictive Control and Multi-Agent Reinforcement Learning Approach</a></h3>
-<div class="authors">Guodong Ma, Baofeng Sun, Wenyu Yang, Zhihong Yao</div>
-<div class="tags"><span class="tag date">2026-09-28</span><span class="tag">math.OC</span><span class="tag">cs.LG</span></div>
-<details><summary>摘要</summary><div class="abs">Successive weaving segments (SWSs) on urban expressways are bottlenecks prone to recurrent congestion and collisions, requiring fine-grained active traffic management (ATM). Existing approaches struggle to balance the adaptive performance of data-driven optimization with the resilience and transferability of model-based control. We propose a hybrid framework to coordinate lane-level variable speed limits (VSLs) and ramp metering across SWSs. First, we reconstruct L-METANET, a lane-level macroscopic traffic flow model that captures free and forced lane changes. Second, we combine XGBoost-SHAP with a random-parameters binary logit (RPBL) model to derive analytical equations for merging and diverging collision risks and formulate system cost and reward functions. Third, we develop MPC-STMAPPO, a hierarchical controller integrating model predictive control (MPC) and multi-agent reinforcement learning (MARL). Its upper MPC layer uses L-METANET for long-horizon rolling optimization and generates baseline commands; its lower spatiotemporal MAPPO (ST-MAPPO) layer, enhanced with Mamba cells and graph attention, produces residual actions for short-horizon adjustment. Real-world experiments on the 18-km Eastern Expressway in Changchun, China, show that L-METANET accurately reproduces lane-changing-induced flow redistribution and capacity drops, with state evolution aligned with ground truth. XGBoost-SHAP-RPBL achieves AUCs above 0.80 in most tasks, outperforming conventional logit models. MPC-STMAPPO converges faster and performs better across multiple metrics than MPC- and MARL-based baselines. Under randomly fluctuating demand, it also significantly outperforms pure MARL in generalization, demonstrating strong potential for industrial deployment.</div></details>
-<div class="links"><a href="http://arxiv.org/abs/2609.35152v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2609.35152v1" target="_blank">PDF</a></div>
-</div>
+<h2>可解释性 × 交通（SHAP）（0 篇）</h2>
+<div class="empty">近 7 天没有新论文</div>
 <footer>由 GitHub Actions 每日自动抓取生成 · 关键词可在仓库 scripts/fetch_arxiv.py 中修改</footer>
 </div>
 </body>
