@@ -38,44 +38,18 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <p class="meta">事故预测 · 道路安全 · 交通预测 · SHAP 可解释性 &nbsp;|&nbsp; 数据源 arXiv，每日自动更新</p>
 
 <div class="stats">
-<div class="stat"><b>4</b>近 7 天论文总数</div>
-<div class="stat"><b>2</b>交通事故与道路安全</div>
+<div class="stat"><b>0</b>近 7 天论文总数</div>
+<div class="stat"><b>0</b>交通事故与道路安全</div>
 <div class="stat"><b>0</b>交通预测</div>
-<div class="stat"><b>2</b>可解释性 × 交通（SHAP）</div>
-<div class="stat"><b>2026-10-05</b>最后更新</div>
+<div class="stat"><b>0</b>可解释性 × 交通（SHAP）</div>
+<div class="stat"><b>2026-10-06</b>最后更新</div>
 </div>
-<h2>交通事故与道路安全（2 篇）</h2>
-<div class="paper">
-<h3><a href="http://arxiv.org/abs/2609.37266v1" target="_blank">Evidence Over Ideology: A Quantitative Assessment of LTNs and Blanket 20 mph Regimes in London</a></h3>
-<div class="authors">Stylianos Kampakis</div>
-<div class="tags"><span class="tag date">2026-09-29</span><span class="tag">stat.OT</span></div>
-<details><summary>摘要</summary><div class="abs">We evaluate the road safety implications of Low Traffic Neighbourhoods (LTNs) and blanket 20 mph speed limits in London using injury-collision records (2020-2024). Because London implemented 20 mph limits primarily via sign-only orders without physical traffic calming, this work evaluates the blanket statutory model rather than lower urban speeds in principle. For LTNs, we apply a causal pipeline combining naive pre/post comparisons, Empirical Bayes shrinkage for Regression to the Mean (RTM), and spatial Difference-in-Differences. Naive comparisons suggest substantial crash reductions, but Empirical Bayes adjustment reveals much of this reflects mean reversion. After correction, only one zone exhibits a statistically significant inside-area reduction. We find no consistent evidence of boundary-road crash displacement nor uniform inside safety gains. Given the modest corrected benefits, small journey-time increases on boundary roads (approximately 10 seconds per vehicle) monetarily negate safety gains. For 20 mph versus 30 mph roads, five associational methods across 14 contexts show that the aggregate difference in the fatal or serious (KSI) collision share is negligible (0.6 percentage points). Controlling the false discovery rate, four contexts display robustly higher KSI shares on 20 mph roads: A-roads, junctions, pedestrian crossings, and single carriageways, with no context showing a robust reduction. In movement corridors where road geometry cues higher speeds, sign-only limits fail to self-enforce. These findings highlight a structural &quot;wrong-road problem.&quot; Indiscriminate sign-only limits impose economic drag without proportionate safety returns. Transport authorities should move away from blanket statutory defaults and return to targeted physical engineering on high-harm corridors.</div></details>
-<div class="links"><a href="http://arxiv.org/abs/2609.37266v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2609.37266v1" target="_blank">PDF</a></div>
-</div>
-<div class="paper">
-<h3><a href="http://arxiv.org/abs/2609.35917v1" target="_blank">Replication Failure and Trivial Baselines in Road-Level Crash Prediction</a></h3>
-<div class="authors">Maurya Patel</div>
-<div class="tags"><span class="tag date">2026-09-28</span><span class="tag">cs.LG</span></div>
-<details><summary>摘要</summary><div class="abs">Graph neural networks are increasingly applied to road-level crash prediction, but the stability of their reported gains has received little scrutiny. We independently reconstruct the data pipeline of a recent uncertainty-aware model and evaluate eleven of its design decisions across three London boroughs under an expanding-window protocol. Four survive replication on a second borough; seven do not, and four of those reverse sign rather than attenuate. Multi-seed evaluation is decisive: one effect reverses sign between random seeds within a single borough, and the reference architecture exhibits per-borough seed spreads of up to 35.7 points against 4 points for ours. We further compare both networks against a parameter-free baseline that ranks segments by cumulative past crash count. At matched history depth our model is statistically indistinguishable from that baseline ($-0.90$ points, $p=0.61$), and the reference architecture loses to it on 18 of 18 held-out windows ($-17.37$, $p&lt;10^{-6}$). Sweeping the baseline's lookback horizon shows it spans 22.71% to 83.94% accuracy on that variable alone, and that every published figure in this line of work is matched by the baseline at a horizon of one to five years. We argue that the apparent margin of graph networks over historical baselines in this task is substantially an artefact of the short horizons those baselines were computed over, and recommend horizon-matched baselines and multi-seed reporting as minimum practice.</div></details>
-<div class="links"><a href="http://arxiv.org/abs/2609.35917v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2609.35917v1" target="_blank">PDF</a></div>
-</div>
+<h2>交通事故与道路安全（0 篇）</h2>
+<div class="empty">近 7 天没有新论文</div>
 <h2>交通预测（0 篇）</h2>
 <div class="empty">近 7 天没有新论文</div>
-<h2>可解释性 × 交通（SHAP）（2 篇）</h2>
-<div class="paper">
-<h3><a href="http://arxiv.org/abs/2610.02342v1" target="_blank">A Multi Method Importance and Performance Efficiency Analysis of Topological Metrics for Natural Visibility Graph Based Cyber Attack Detection</a></h3>
-<div class="authors">Ali Melih Kanca, Ilker Turker</div>
-<div class="tags"><span class="tag date">2026-10-01</span><span class="tag">cs.AI</span></div>
-<details><summary>摘要</summary><div class="abs">Natural Visibility Graph (NVG) based analysis characterizes network traffic through topological descriptors reflecting different structural properties. However, not all descriptors contribute equally to cyber-attack classification, and extracting a large metric set can increase computational cost. This study evaluates 21 NVG derived topological metrics and investigates whether a compact subset can preserve classification capability while improving computational efficiency. Four importance analysis methods SHAP, grouped Permutation Importance, Boruta, and Recursive Feature Elimination (RFE) are integrated through a Consensus Ranking strategy. Based on this ranking, Full21, Top15, Top10, Top7, Top5, and Top3 configurations are evaluated using the CICIDS2018 dataset, a CNN classifier, and stratified 5 fold cross validation. The three highest ranked metrics are avg_clustering_coeff_median, avg_clustering_coeff_std, and avg_clustering_coeff_mean. Top3 achieved the highest observed mean performance, with 97.148% accuracy, 97.055% weighted F1 score, and an MCC of 0.9675, compared with 95.999%, 95.521%, and 0.9549 for Full21, respectively. It also reduced total runtime from 14,961.39 s to 589.22 s (96.06%). These results indicate that importance guided metric reduction can provide a compact NVG representation with higher observed mean predictive performance and substantially lower computational cost under the evaluated setting.</div></details>
-<div class="links"><a href="http://arxiv.org/abs/2610.02342v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2610.02342v1" target="_blank">PDF</a></div>
-</div>
-<div class="paper">
-<h3><a href="http://arxiv.org/abs/2609.35152v1" target="_blank">Coordinated Lane-Level Variable Speed Limits and Ramp Metering for Successive Weaving Segments Considering Merging/Diverging Risks: A Hybrid Model Predictive Control and Multi-Agent Reinforcement Learning Approach</a></h3>
-<div class="authors">Guodong Ma, Baofeng Sun, Wenyu Yang, Zhihong Yao</div>
-<div class="tags"><span class="tag date">2026-09-28</span><span class="tag">math.OC</span><span class="tag">cs.LG</span></div>
-<details><summary>摘要</summary><div class="abs">Successive weaving segments (SWSs) on urban expressways are bottlenecks prone to recurrent congestion and collisions, requiring fine-grained active traffic management (ATM). Existing approaches struggle to balance the adaptive performance of data-driven optimization with the resilience and transferability of model-based control. We propose a hybrid framework to coordinate lane-level variable speed limits (VSLs) and ramp metering across SWSs. First, we reconstruct L-METANET, a lane-level macroscopic traffic flow model that captures free and forced lane changes. Second, we combine XGBoost-SHAP with a random-parameters binary logit (RPBL) model to derive analytical equations for merging and diverging collision risks and formulate system cost and reward functions. Third, we develop MPC-STMAPPO, a hierarchical controller integrating model predictive control (MPC) and multi-agent reinforcement learning (MARL). Its upper MPC layer uses L-METANET for long-horizon rolling optimization and generates baseline commands; its lower spatiotemporal MAPPO (ST-MAPPO) layer, enhanced with Mamba cells and graph attention, produces residual actions for short-horizon adjustment. Real-world experiments on the 18-km Eastern Expressway in Changchun, China, show that L-METANET accurately reproduces lane-changing-induced flow redistribution and capacity drops, with state evolution aligned with ground truth. XGBoost-SHAP-RPBL achieves AUCs above 0.80 in most tasks, outperforming conventional logit models. MPC-STMAPPO converges faster and performs better across multiple metrics than MPC- and MARL-based baselines. Under randomly fluctuating demand, it also significantly outperforms pure MARL in generalization, demonstrating strong potential for industrial deployment.</div></details>
-<div class="links"><a href="http://arxiv.org/abs/2609.35152v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2609.35152v1" target="_blank">PDF</a></div>
-</div>
+<h2>可解释性 × 交通（SHAP）（0 篇）</h2>
+<div class="empty">近 7 天没有新论文</div>
 <footer>由 GitHub Actions 每日自动抓取生成 · 关键词可在仓库 scripts/fetch_arxiv.py 中修改</footer>
 </div>
 </body>
