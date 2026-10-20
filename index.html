@@ -38,15 +38,35 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <p class="meta">事故预测 · 道路安全 · 交通预测 · SHAP 可解释性 &nbsp;|&nbsp; 数据源 arXiv，每日自动更新</p>
 
 <div class="stats">
-<div class="stat"><b>1</b>近 7 天论文总数</div>
-<div class="stat"><b>0</b>交通事故与道路安全</div>
-<div class="stat"><b>1</b>交通预测</div>
+<div class="stat"><b>4</b>近 7 天论文总数</div>
+<div class="stat"><b>2</b>交通事故与道路安全</div>
+<div class="stat"><b>2</b>交通预测</div>
 <div class="stat"><b>0</b>可解释性 × 交通（SHAP）</div>
-<div class="stat"><b>2026-10-19</b>最后更新</div>
+<div class="stat"><b>2026-10-20</b>最后更新</div>
 </div>
-<h2>交通事故与道路安全（0 篇）</h2>
-<div class="empty">近 7 天没有新论文</div>
-<h2>交通预测（1 篇）</h2>
+<h2>交通事故与道路安全（2 篇）</h2>
+<div class="paper">
+<h3><a href="http://arxiv.org/abs/2610.25340v1" target="_blank">Edge Deployable Lightweight Framework for Real-Time Driver Safety System with Integrated Lane Departure and Traffic Sign Recognition</a></h3>
+<div class="authors">Hassaan Ali Qureshi, Danish Hussain, Ali Hassan, Aon Safdar 等</div>
+<div class="tags"><span class="tag date">2026-10-18</span><span class="tag">cs.CV</span></div>
+<details><summary>摘要</summary><div class="abs">Lane departure and traffic-sign negligence are leading contributors to road accidents, particularly in regions with non-standardized signage and limited annotated data. Existing Advanced Driver Assistance Systems (ADAS) solutions are often developed as disjointed submodules, are rarely validated for real-time operation, and struggle to balance accuracy with low-latency inference for embedded deployment. We address these gaps with a unified, edge-deployable ADAS framework that simultaneously performs lane-departure warning (LDW) and traffic-sign detection and recognition (TSD/TSR), and validate the proposed system on automotive-class devices. Our framework combines a lightweight, lane-segmentation-driven LDW, which includes a drivable-area fallback for degraded markings, with a two-stage TSD/TSR pipeline consisting of efficient sign localization followed by fine-grained classification, designed to preserve accuracy at embedded latency. To support region-specific deployment under data scarcity, we curate a 35-class local traffic-sign dataset and introduce a generalized augmentation and balancing profile, expanding the corpus from 359 images to 8,750 samples. On an NVIDIA Jetson Orin Nano, the integrated system sustains 15 FPS end to end (32 FPS for LDW and 18 FPS for TSD/TSR). The TSD/TSR branch achieves 97.4 mAP for detection and 95.6% validation accuracy (93.1% on a local real-world set) while maintaining an approximately 13.9 M parameter footprint. Relative to recent methods that target a single task or report results only on desktop-class GPUs, our approach delivers both LDW and TSD/TSR with real-time performance on edge hardware, providing a practical pathway to low-cost, field-ready ADAS in resource-constrained settings.</div></details>
+<div class="links"><a href="http://arxiv.org/abs/2610.25340v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2610.25340v1" target="_blank">PDF</a></div>
+</div>
+<div class="paper">
+<h3><a href="http://arxiv.org/abs/2610.23990v1" target="_blank">Automatic Cause Determination in Road Scene Understanding Using Qualitative Reasoning and Four-Valued Logic</a></h3>
+<div class="authors">Nassim Belmecheri, Arnaud Gotlieb, Nadjib Lazaar, Helge Spieker</div>
+<div class="tags"><span class="tag date">2026-10-14</span><span class="tag">cs.CV</span></div>
+<details><summary>摘要</summary><div class="abs">Road scene understanding in automated driving (AD) aims to build a comprehensive analysis of video sequences taken on the road by embedded or fixed cameras (e.g., mounted on vertical road signals). One goal is to identify the relevant actors in the scene and another goal is to determine the causes that have triggered a specific action of the ego car (i.e., stop, slow down, turn left, etc.). In a complex urban environment, these causes can be multiple, confusing, possibly contradictory to other causes and not easily expressible using simplistic reasoning. Still, providing accurate {\it automatic cause determination} supports a) user acceptance by providing appropriate explanations to the car passengers and road users; b) increased road safety by providing detailed road scene understanding to traffic. In this paper, we propose using spatiotemporal reasoning and Belnap's four-valued logic to formulate complex causes of AD action in a road scene. We compute these causes by analysing a Qualitative eXplainable Graph (QXG), which is an abstract representation of the road scene capturing spatiotemporal relations between road entities. Starting from a QXG, our approach called \tool, is targeted to determine complex causes of a selected AD action occurring in a specific frame of a road scene. The usefulness of \tool is demonstrated on several scenes extracted from the well-known NuScene dataset.</div></details>
+<div class="links"><a href="http://arxiv.org/abs/2610.23990v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2610.23990v1" target="_blank">PDF</a></div>
+</div>
+<h2>交通预测（2 篇）</h2>
+<div class="paper">
+<h3><a href="http://arxiv.org/abs/2610.25140v1" target="_blank">Spectral Adaptive Graph Transformer for Efficient and Scalable Traffic Forecasting</a></h3>
+<div class="authors">Amirhossein Ghaffari, Susanna Pirttikangas, Ekaterina Gilman</div>
+<div class="tags"><span class="tag date">2026-10-18</span><span class="tag">cs.AI</span><span class="tag">cs.LG</span></div>
+<details><summary>摘要</summary><div class="abs">Traffic forecasting models based on spectral graph convolution offer an interpretable account of how information is mixed between sensors, but they rely on an eigendecomposition of the graph Laplacian. It costs cubic time, is fixed by the road network, and provides a symmetric operator that cannot represent the directed propagation of traffic congestion. Attention-based spatio-temporal transformers remove these limitations but generate a dense sensor-by-sensor attention map at each layer and time step, so memory, rather than accuracy, becomes the binding constraint on large networks. We introduce the spectral adaptive graph transformer, whose spatial operator is learned rather than derived from the Laplacian, directed rather than symmetric, and conditioned on the current traffic state rather than a static state, at a cost linear in the number of sensors. A sparse road graph diffusion branch provides the strictly local propagation that a low-rank operator cannot express, and a zero-initialized gate learns the balance between the two. Before spatial mixing, a unit-mean-gain frequency-bin attention module reweights each sensor's short-term periodicities according to its identity and current context. Across six public benchmarks spanning 170 to 1843 sensors, evaluated over three random seeds, the proposed model attains the lowest error of any single end-to-end model on one benchmark and remains competitive with the strongest current attention models on the others, while using about a quarter of their memory and training about twice as fast.</div></details>
+<div class="links"><a href="http://arxiv.org/abs/2610.25140v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2610.25140v1" target="_blank">PDF</a></div>
+</div>
 <div class="paper">
 <h3><a href="http://arxiv.org/abs/2610.19442v1" target="_blank">Traffic State Prediction and Control Using a Koopman Operator Framework with Polynomial Observables</a></h3>
 <div class="authors">Shakib Mustavee, Arvind Singh, Shaurya Agarwal</div>
