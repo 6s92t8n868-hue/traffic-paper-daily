@@ -38,11 +38,11 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <p class="meta">事故预测 · 道路安全 · 交通预测 · SHAP 可解释性 &nbsp;|&nbsp; 数据源 arXiv，每日自动更新</p>
 
 <div class="stats">
-<div class="stat"><b>2</b>近 7 天论文总数</div>
+<div class="stat"><b>3</b>近 7 天论文总数</div>
 <div class="stat"><b>2</b>交通事故与道路安全</div>
-<div class="stat"><b>0</b>交通预测</div>
+<div class="stat"><b>1</b>交通预测</div>
 <div class="stat"><b>0</b>可解释性 × 交通（SHAP）</div>
-<div class="stat"><b>2026-10-26</b>最后更新</div>
+<div class="stat"><b>2026-10-27</b>最后更新</div>
 </div>
 <h2>交通事故与道路安全（2 篇）</h2>
 <div class="paper">
@@ -59,8 +59,14 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <details><summary>摘要</summary><div class="abs">Traffic safety videos provide rich evidence for understanding interactions between pedestrians and vehicles, but synthetic-to-real evaluation makes this setting challenging because models must learn from simulated scenes and generalize to real-world traffic. In this work, we present StateBridge, a traffic video-language framework designed to operate under this synthetic-only training protocol. Our approach uses phase-aware clip construction, pedestrian and vehicle track summaries, and structured prompts to ground vision-language models in stable traffic evidence rather than appearance alone. We fine-tune public vision-language models on synthetic captioning and visual question answering examples, then combine their outputs through fact-locked caption fusion and evidence-diverse VQA consensus to improve consistency across actor roles, behavioral phases, and question types. StateBridge achieves an official S2 score of 55.4679 on AI City Challenge 2026 Track 2 using only synthetic training data. These results demonstrate the effectiveness of structured evidence transfer for traffic safety captioning and visual question answering.</div></details>
 <div class="links"><a href="http://arxiv.org/abs/2610.31898v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2610.31898v1" target="_blank">PDF</a></div>
 </div>
-<h2>交通预测（0 篇）</h2>
-<div class="empty">近 7 天没有新论文</div>
+<h2>交通预测（1 篇）</h2>
+<div class="paper">
+<h3><a href="http://arxiv.org/abs/2610.35070v1" target="_blank">Joint Dynamic Lane Reversal and Variable Speed Limit Control: A Graphormer-Based Approach</a></h3>
+<div class="authors">Hamed Araab, Abbas Ahmadi, Mohammad Hossein Basiri</div>
+<div class="tags"><span class="tag date">2026-10-26</span><span class="tag">eess.SY</span><span class="tag">cs.AI</span><span class="tag">cs.LG</span></div>
+<details><summary>摘要</summary><div class="abs">Connected and automated vehicles could allow reassigning lane directions and speed limits on every road frequently, but the benefit hinges on how traffic reroutes, and one-way roads can isolate junctions. We formulate network-wide dynamic lane allocation and directional speed limit control with one-way roads, lane clearing before each reversal, and a navigable graph kept strongly connected at all times. An action-resolution algorithm grounded in graph orientation theory admits a proposal closing a direction only if the network stays strongly connected and otherwise relaxes or reverts it, keeping all junctions mutually reachable within the model, even during clearing. All road controllers share one transformer whose attention, Global Endpoint Relation-Aware Spatio-Temporal Self-Attention (GERASTSA), spans all road-time tokens, biased by the endpoint relations between roads. It is pretrained on action-conditioned traffic forecasting and fine-tuned with per-road proximal policy optimization under a mixed reward that also credits neighboring roads and the network. On a 6 x 6 grid with commuter rush hours, the learned policy makes about two thirds of roads one-way in the peak direction and cuts daily delay by 90% against the initial configuration held fixed and by 85% against a tuned two-way load balancer. Restricted to two-way roads at test time, it gains only about as much as this balancer, whereas its learned speed limits add delay. Pretraining roughly halves the updates needed to surpass the fixed configuration. Of the ablations, only removing the relational bias or the spatial embedding clearly matters, multiplying delay about fivefold.</div></details>
+<div class="links"><a href="http://arxiv.org/abs/2610.35070v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2610.35070v1" target="_blank">PDF</a></div>
+</div>
 <h2>可解释性 × 交通（SHAP）（0 篇）</h2>
 <div class="empty">近 7 天没有新论文</div>
 <footer>由 GitHub Actions 每日自动抓取生成 · 关键词可在仓库 scripts/fetch_arxiv.py 中修改</footer>
