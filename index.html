@@ -38,13 +38,20 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <p class="meta">事故预测 · 道路安全 · 交通预测 · SHAP 可解释性 &nbsp;|&nbsp; 数据源 arXiv，每日自动更新</p>
 
 <div class="stats">
-<div class="stat"><b>3</b>近 7 天论文总数</div>
-<div class="stat"><b>2</b>交通事故与道路安全</div>
-<div class="stat"><b>1</b>交通预测</div>
+<div class="stat"><b>6</b>近 7 天论文总数</div>
+<div class="stat"><b>3</b>交通事故与道路安全</div>
+<div class="stat"><b>3</b>交通预测</div>
 <div class="stat"><b>0</b>可解释性 × 交通（SHAP）</div>
-<div class="stat"><b>2026-10-27</b>最后更新</div>
+<div class="stat"><b>2026-10-28</b>最后更新</div>
 </div>
-<h2>交通事故与道路安全（2 篇）</h2>
+<h2>交通事故与道路安全（3 篇）</h2>
+<div class="paper">
+<h3><a href="http://arxiv.org/abs/2610.36622v1" target="_blank">RadarCom: Unlocking Simultaneous Communication and Sensing on Commodity Automotive mmWave Radars</a></h3>
+<div class="authors">Yi Wei, Yue Zhang, Peijun Hou, Qiuyu Liao 等</div>
+<div class="tags"><span class="tag date">2026-10-27</span><span class="tag">cs.NI</span></div>
+<details><summary>摘要</summary><div class="abs">Vehicle-to-vehicle (V2V) communication can improve road safety and traffic efficiency, yet its deployment remains limited by the need for dedicated communication hardware and supporting infrastructure. Meanwhile, production vehicles are already widely equipped with millimeter-wave radars for sensing. To unlock their communication potential, this paper presents RadarCom, a software-defined system that enables direct radar-to-radar communication on unmodified commercial off-the-shelf (COTS) automotive mmWave radars while preserving their native sensing functionality. The key insight is that mutual inter-radar interference, traditionally viewed as harmful, can be repurposed as a communication carrier. Based on this insight, RadarCom introduces slope-mismatch-based discovery, adaptive chirp synchronization, differential coding on range-FFT, and sensing-aware interference suppression to enable simultaneous communication and sensing without hardware modification, waveform redesign, or infrastructure support. We implement RadarCom on TI AWR2243 automotive radars and evaluate it under static, dynamic, and challenging real-world conditions. Results show an average effective data rate of 5.55 kbps with symbol error rates below 1.5%, while maintaining sensing F1 scores of up to 80.5% during concurrent communication. These results demonstrate the feasibility of transforming commodity automotive radars into dual-purpose communication and sensing devices.</div></details>
+<div class="links"><a href="http://arxiv.org/abs/2610.36622v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2610.36622v1" target="_blank">PDF</a></div>
+</div>
 <div class="paper">
 <h3><a href="http://arxiv.org/abs/2610.32719v1" target="_blank">Cross-Scenario Controller Parameter Transformation from Real-World Driving Data through Flow Matching</a></h3>
 <div class="authors">Christian Zink, Maik Pfefferkorn, Eric Lenz, Felix Kallmeyer 等</div>
@@ -59,7 +66,21 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <details><summary>摘要</summary><div class="abs">Traffic safety videos provide rich evidence for understanding interactions between pedestrians and vehicles, but synthetic-to-real evaluation makes this setting challenging because models must learn from simulated scenes and generalize to real-world traffic. In this work, we present StateBridge, a traffic video-language framework designed to operate under this synthetic-only training protocol. Our approach uses phase-aware clip construction, pedestrian and vehicle track summaries, and structured prompts to ground vision-language models in stable traffic evidence rather than appearance alone. We fine-tune public vision-language models on synthetic captioning and visual question answering examples, then combine their outputs through fact-locked caption fusion and evidence-diverse VQA consensus to improve consistency across actor roles, behavioral phases, and question types. StateBridge achieves an official S2 score of 55.4679 on AI City Challenge 2026 Track 2 using only synthetic training data. These results demonstrate the effectiveness of structured evidence transfer for traffic safety captioning and visual question answering.</div></details>
 <div class="links"><a href="http://arxiv.org/abs/2610.31898v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2610.31898v1" target="_blank">PDF</a></div>
 </div>
-<h2>交通预测（1 篇）</h2>
+<h2>交通预测（3 篇）</h2>
+<div class="paper">
+<h3><a href="http://arxiv.org/abs/2610.37598v1" target="_blank">GAS-PFN: Graph-Aware Spatiotemporal Prior-Data Fitted Networks for Zero-Shot Traffic Forecasting</a></h3>
+<div class="authors">Joseph Natter, Long Vu, Yifan Zhang, Bobin Deng 等</div>
+<div class="tags"><span class="tag date">2026-10-27</span><span class="tag">cs.LG</span><span class="tag">cs.AI</span><span class="tag">cs.NE</span></div>
+<details><summary>摘要</summary><div class="abs">Traffic forecasting requires modeling complex temporal dynamics and the spatial dependencies imposed by road topology. Supervised graph-based models achieve strong performance, but are often trained for a particular dataset and sensor graph, making deployment to new or evolving networks costly. Prior-Data Fitted Networks (PFNs) offer a zero-shot alternative by learning in-context inference from synthetic task priors, which provide an explicit mechanism for encoding domain-specific assumptions. Existing forecasting PFNs, however, do not explicitly represent the graph-structured dependencies governing traffic dynamics. To combine graph-aware traffic modeling with zero-shot adaptation, we introduce the Graph-Aware Spatiotemporal Prior-Data Fitted Network (GAS-PFN). GAS-PFN incorporates sampled road topology into its synthetic task prior through random-walk diffusion, teaching the model to learn graph-coupled dynamics during pretraining. Its co-designed inference architecture uses two mask-conditioned passes through a shared Transformer backbone to separately model sensor-specific temporal dynamics and spatiotemporal interactions among neighboring sensors before integrating their representations for prediction. This design enables GAS-PFN to use target-network structure and context without parameter updates. Across six benchmarks at the 90-minute horizon, GAS-PFN reduces MSE by 34.0% on average relative to TimePFN, its closest PFN-based predecessor. It also reduces MSE by 27.7% on average relative to four recent industry-developed general-purpose zero-shot forecasters. In this comparison, all models receive 90 minutes of contiguous recent history, and any additional context is drawn from each dataset's chronological training split. These results indicate that aligning PFN priors and inference architectures with graph structure improves in-context learning for zero-shot traffic forecasting.</div></details>
+<div class="links"><a href="http://arxiv.org/abs/2610.37598v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2610.37598v1" target="_blank">PDF</a></div>
+</div>
+<div class="paper">
+<h3><a href="http://arxiv.org/abs/2610.36393v1" target="_blank">SpecLST: Spectral-Enhanced Long-Short Term Spatio-Temporal Multimodal Modeling for Traffic Forecasting</a></h3>
+<div class="authors">Kenan Kang, Matthew M. Y. Kuo, Weihua Li</div>
+<div class="tags"><span class="tag date">2026-10-26</span><span class="tag">cs.LG</span></div>
+<details><summary>摘要</summary><div class="abs">Modeling multi-scale dynamics in urban road networks is essential for intelligent transportation systems but is often hindered by the computational cost of long-range historical context and the challenge of fusing heterogeneous modalities. Existing spatio-temporal frameworks face a trade-off between sequence length and memory overhead, while frequently neglecting the transient effects of exogenous factors such as road incidents and weather. To address these limitations, we propose SpecLST, a frequency-enhanced long-short-term spatio-temporal multimodal framework. SpecLST leverages a fast Fourier transform-based frequency-domain representation module to efficiently encode multi-week historical dependencies, bypassing the memory bottlenecks of standard attention mechanisms over raw long sequences. Heterogeneous context is integrated through attention-based fusion, followed by a sparse Mixture-of-Experts backbone with graph augmentation for spatio-temporal representation learning. Additionally, a frequency-enhanced residual head isolates high-frequency transients, improving sensitivity to abrupt traffic anomalies. At the 60-minute horizon, SpecLST achieves mean relative error reductions of 14.10% in MAE, 10.35% in RMSE, and 15.78% in MAPE across eight neural forecasting baselines and four datasets, with the dataset- and metric-specific average reductions ranging from 5.63% to 22.21%.</div></details>
+<div class="links"><a href="http://arxiv.org/abs/2610.36393v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2610.36393v1" target="_blank">PDF</a></div>
+</div>
 <div class="paper">
 <h3><a href="http://arxiv.org/abs/2610.35070v1" target="_blank">Joint Dynamic Lane Reversal and Variable Speed Limit Control: A Graphormer-Based Approach</a></h3>
 <div class="authors">Hamed Araab, Abbas Ahmadi, Mohammad Hossein Basiri</div>
