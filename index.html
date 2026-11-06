@@ -38,11 +38,11 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <p class="meta">事故预测 · 道路安全 · 交通预测 · SHAP 可解释性 &nbsp;|&nbsp; 数据源 arXiv，每日自动更新</p>
 
 <div class="stats">
-<div class="stat"><b>6</b>近 7 天论文总数</div>
+<div class="stat"><b>7</b>近 7 天论文总数</div>
 <div class="stat"><b>2</b>交通事故与道路安全</div>
-<div class="stat"><b>2</b>交通预测</div>
+<div class="stat"><b>3</b>交通预测</div>
 <div class="stat"><b>2</b>可解释性 × 交通（SHAP）</div>
-<div class="stat"><b>2026-11-05</b>最后更新</div>
+<div class="stat"><b>2026-11-06</b>最后更新</div>
 </div>
 <h2>交通事故与道路安全（2 篇）</h2>
 <div class="paper">
@@ -59,7 +59,14 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <details><summary>摘要</summary><div class="abs">Dynamic map (DM) is a core information infrastructure for vehicle-road-cloud (VRC) cooperative autonomous driving. It fuses perception data from multiple sources to overcome the inherent line-of-sight and field-of-view limits of single-vehicle perception. However, DM still falls short on driving safety in two ways. First, DM data specifications already define road conditions semantically, but no pipeline yet turns real-world road observations into fine-grained risk entities in the DM. Second, existing DM systems lack a natural language interface for driving risks. To close these gaps, we propose Safety4DM, a safety-oriented language system for VRC dynamic maps. We first build RoadRisk, a real-world road image dataset that covers four types of road conditions and four risk levels. On this dataset, we fine-tune a vision-language model (VLM) for road safety risk perception. The model outputs structured risk representations that the DM can ingest directly. We then introduce a Safety-aware Step-wise Prompting (SafeStep) mechanism as the natural language query interface of the DM. SafeStep answers queries accurately and also generates actionable driving advice. To build and evaluate this interface, we develop SafeVRC-Sim, a VRC cooperative simulation framework, and SafeDM-QA, a safety question-answering benchmark. Experiments show that even the compact Qwen3-VL-4B reaches 89.83% accuracy on risk perception after fine-tuning. SafeStep also plugs easily into multiple LLM families. With medium and large models (20B and above) from five families, it achieves over 93% natural language query accuracy in every case, which shows strong generalization.</div></details>
 <div class="links"><a href="http://arxiv.org/abs/2611.01996v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2611.01996v1" target="_blank">PDF</a></div>
 </div>
-<h2>交通预测（2 篇）</h2>
+<h2>交通预测（3 篇）</h2>
+<div class="paper">
+<h3><a href="http://arxiv.org/abs/2611.07526v1" target="_blank">Understanding Data Influence in Transportation Networks: A Physics-Constrained Influence-Function Framework</a></h3>
+<div class="authors">Hamidreza Attari, Yueyue Fan, Johannes Royset</div>
+<div class="tags"><span class="tag date">2026-11-05</span><span class="tag">cs.LG</span></div>
+<details><summary>摘要</summary><div class="abs">Understanding how individual training observations influence model predictions is important for developing reliable and interpretable data-driven transportation systems. Existing influence-function methods, however, are primarily formulated for unconstrained learning and do not explicitly account for physical constraints that couple different components of a transportation network. Under such constraints, perturbing a training observation can affect model parameters and predictions only through physically feasible directions, potentially changing how its influence propagates across the network. This paper develops a hard physics-informed influence-function framework for constrained learning, in which training-data influence is characterized within the physically feasible space defined by network constraints. The analytical results reveal how physical constraints alter the magnitude, direction, and spatial distribution of training-sample influence relative to conventional influence measures. Using traffic prediction under flow-conservation constraints as a case study, we show that influential observations identified by the proposed framework differ systematically from those identified by classical influence functions. Through orthogonal decomposition, we quantitatively characterize how much of a perturbation in the training data is propagated through the network via the flow-conservation constraints and how much is removed by the constraint projection. The proposed influence framework provides a physically consistent approach for evaluating training-data influence in constrained transportation learning problems, with potential applications to data diagnostics, sensor evaluation, and targeted data collection.</div></details>
+<div class="links"><a href="http://arxiv.org/abs/2611.07526v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2611.07526v1" target="_blank">PDF</a></div>
+</div>
 <div class="paper">
 <h3><a href="http://arxiv.org/abs/2611.05715v1" target="_blank">CoReFlow: Consistency-Relaxed Flow Maps for Probabilistic Traffic Forecasting</a></h3>
 <div class="authors">Pengnan Chi, Zhiguo Zhang, Xiaoliang Ma</div>
