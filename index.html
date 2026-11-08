@@ -38,11 +38,11 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <p class="meta">事故预测 · 道路安全 · 交通预测 · SHAP 可解释性 &nbsp;|&nbsp; 数据源 arXiv，每日自动更新</p>
 
 <div class="stats">
-<div class="stat"><b>6</b>近 7 天论文总数</div>
+<div class="stat"><b>5</b>近 7 天论文总数</div>
 <div class="stat"><b>2</b>交通事故与道路安全</div>
-<div class="stat"><b>3</b>交通预测</div>
+<div class="stat"><b>2</b>交通预测</div>
 <div class="stat"><b>1</b>可解释性 × 交通（SHAP）</div>
-<div class="stat"><b>2026-11-07</b>最后更新</div>
+<div class="stat"><b>2026-11-08</b>最后更新</div>
 </div>
 <h2>交通事故与道路安全（2 篇）</h2>
 <div class="paper">
@@ -59,7 +59,7 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <details><summary>摘要</summary><div class="abs">Dynamic map (DM) is a core information infrastructure for vehicle-road-cloud (VRC) cooperative autonomous driving. It fuses perception data from multiple sources to overcome the inherent line-of-sight and field-of-view limits of single-vehicle perception. However, DM still falls short on driving safety in two ways. First, DM data specifications already define road conditions semantically, but no pipeline yet turns real-world road observations into fine-grained risk entities in the DM. Second, existing DM systems lack a natural language interface for driving risks. To close these gaps, we propose Safety4DM, a safety-oriented language system for VRC dynamic maps. We first build RoadRisk, a real-world road image dataset that covers four types of road conditions and four risk levels. On this dataset, we fine-tune a vision-language model (VLM) for road safety risk perception. The model outputs structured risk representations that the DM can ingest directly. We then introduce a Safety-aware Step-wise Prompting (SafeStep) mechanism as the natural language query interface of the DM. SafeStep answers queries accurately and also generates actionable driving advice. To build and evaluate this interface, we develop SafeVRC-Sim, a VRC cooperative simulation framework, and SafeDM-QA, a safety question-answering benchmark. Experiments show that even the compact Qwen3-VL-4B reaches 89.83% accuracy on risk perception after fine-tuning. SafeStep also plugs easily into multiple LLM families. With medium and large models (20B and above) from five families, it achieves over 93% natural language query accuracy in every case, which shows strong generalization.</div></details>
 <div class="links"><a href="http://arxiv.org/abs/2611.01996v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2611.01996v1" target="_blank">PDF</a></div>
 </div>
-<h2>交通预测（3 篇）</h2>
+<h2>交通预测（2 篇）</h2>
 <div class="paper">
 <h3><a href="http://arxiv.org/abs/2611.07526v1" target="_blank">Understanding Data Influence in Transportation Networks: A Physics-Constrained Influence-Function Framework</a></h3>
 <div class="authors">Hamidreza Attari, Yueyue Fan, Johannes Royset</div>
@@ -73,13 +73,6 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <div class="tags"><span class="tag date">2026-11-03</span><span class="tag">cs.LG</span></div>
 <details><summary>摘要</summary><div class="abs">Probabilistic traffic forecasting is essential for reliable Intelligent Transportation Systems (ITS), as it captures uncertainties in complex road networks. Recent diffusion- and flow-based generative models have facilitated uncertainty modeling through a multi-step sampling process. However, beyond slow inference, this process is designed to capture complex multimodal distributions, which misaligns with the limited complexity of the conditional traffic data distribution, causing models to underperform deterministic baselines. To address this, we introduce the \underline{Co}nsistency-\underline{Re}laxed \underline{Flow} Map (CoReFlow) model, presenting the first effort to leverage the one-step generation capability of flow maps, known as solution operators of probability-flow ordinary differential equations. Besides, we improve accuracy using a concise training objective that supervises the model via interpolation endpoints over finite time intervals. Unlike existing methods (e.g., self-distillation and MeanFlow Identity) that maintain trajectory consistency to model multimodal distributions, our objective leverages conditional mean to restrict the consistency, thereby achieving higher accuracy in the probabilistic traffic forecasting task. Extensive experiments on four real-world datasets show CoReFlow achieves state-of-the-art forecasting accuracy. It surpasses recent baselines, provides competitive uncertainty modeling, and reduces inference costs compared to existing generative baselines.</div></details>
 <div class="links"><a href="http://arxiv.org/abs/2611.05715v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2611.05715v1" target="_blank">PDF</a></div>
-</div>
-<div class="paper">
-<h3><a href="http://arxiv.org/abs/2611.01270v1" target="_blank">Uncertainty-Aware Coordinated Multi-Ramp Metering Based on an Action-Conditioned Traffic Prediction Operator Under Sparse Observations</a></h3>
-<div class="authors">Hongxin Yu, Fengyue Jin, Tao Jiang, Yibing Wang 等</div>
-<div class="tags"><span class="tag date">2026-10-31</span><span class="tag">physics.app-ph</span></div>
-<details><summary>摘要</summary><div class="abs">Coordinated multi-ramp metering (CRM) is an important approach to mitigating freeway congestion, but sparse observations in practice complicate the state estimation and model calibration required by predictive control. This study develops an Action-Conditioned Traffic Prediction Operator (ATPO) driven by sparse, heterogeneous observations and candidate multi-ramp actions, and embeds it in an uncertainty-aware CRM framework (ATPOUCRM). ATPO forms a four-channel history from the density and speed measurements of fixed detectors and probe vehicles and their separate observation masks. Queries at future spatiotemporal points attend to all valid historical observations before incorporating upstream mainline demand and on-ramp queue information. Candidate metering actions condition the latent field through feature-wise linear modulation, a spatial Fourier operator, and a causal temporal kernel. The operator produces action-conditioned predictive distributions of future density and speed throughout the corridor; a bootstrap ensemble additionally characterizes disagreement among models. Using these predictions, ATPOUCRM primarily minimizes expected total time spent, including mainline travel and on-ramp waiting, while penalizing predictive uncertainty near merge areas. It uses the cross-entropy method to search candidate actions and applies a safety filter before execution. For five-minute global traffic state prediction on a simulated 7-km freeway corridor, ATPO achieves root mean square errors of 2.54 veh/km/lane, 4.56 km/h, and 0.76 veh*h for density, speed, and total time spent over the forecast horizon, respectively, outperforming the comparison methods. Across 100 control scenarios, ATPOUCRM reduces mean total time spent by 26.17% relative to no control. ATPO also generates predictions on finer spatiotemporal grids without retraining.</div></details>
-<div class="links"><a href="http://arxiv.org/abs/2611.01270v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2611.01270v1" target="_blank">PDF</a></div>
 </div>
 <h2>可解释性 × 交通（SHAP）（1 篇）</h2>
 <div class="paper">
