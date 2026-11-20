@@ -38,11 +38,11 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <p class="meta">事故预测 · 道路安全 · 交通预测 · SHAP 可解释性 &nbsp;|&nbsp; 数据源 arXiv，每日自动更新</p>
 
 <div class="stats">
-<div class="stat"><b>2</b>近 7 天论文总数</div>
+<div class="stat"><b>3</b>近 7 天论文总数</div>
 <div class="stat"><b>2</b>交通事故与道路安全</div>
-<div class="stat"><b>0</b>交通预测</div>
+<div class="stat"><b>1</b>交通预测</div>
 <div class="stat"><b>0</b>可解释性 × 交通（SHAP）</div>
-<div class="stat"><b>2026-11-19</b>最后更新</div>
+<div class="stat"><b>2026-11-20</b>最后更新</div>
 </div>
 <h2>交通事故与道路安全（2 篇）</h2>
 <div class="paper">
@@ -59,8 +59,14 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <details><summary>摘要</summary><div class="abs">Cooperative driving extends autonomous driving from individual vehicle decisions to joint maneuvers that improve traffic safety and efficiency. Optimization-based methods impose safety constraints but often fix paths to simplify multi-vehicle planning, limiting spatial flexibility. Multi-agent reinforcement learning (MARL) explores alternatives through interaction, but coordinated learning and safe execution remain challenging. Their integration nevertheless faces challenges in exploration efficiency, experience allocation, and execution reliability. To address these challenges, this paper proposes CoopDistill, an equilibrium-guided multi-agent policy distillation framework. A potential-game (PG) formulation provides a fixed-path longitudinal reference, around which a residual MARL policy learns longitudinal acceleration, conflict-approach timing, and lateral path corrections. A hard-case curriculum concentrates experience on interactions that PG leaves unresolved or substantially delayed. A comparative rollout selector evaluates the joint consequences of learned corrections against PG before choosing the executed action. Experiments in merging, roundabout, and intersection scenarios compare CoopDistill with six baselines at four connected automated vehicle penetration levels. Relative to PG, success improves by 2.1--27.1 percentage points and delay decreases by 7.3--27.3\%, with no observed collisions. Code is available at https://github.com/FanGShiYuu/CoopDistill</div></details>
 <div class="links"><a href="http://arxiv.org/abs/2611.21069v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2611.21069v1" target="_blank">PDF</a></div>
 </div>
-<h2>交通预测（0 篇）</h2>
-<div class="empty">近 7 天没有新论文</div>
+<h2>交通预测（1 篇）</h2>
+<div class="paper">
+<h3><a href="http://arxiv.org/abs/2611.25592v1" target="_blank">From Data Alignment to Parameter Generation: Few-Shot Cross-City Traffic Prediction with Conditional Diffusion</a></h3>
+<div class="authors">Shengchun Wang, Yuhang Lin, Tong Li, Pengyuan Zhou 等</div>
+<div class="tags"><span class="tag date">2026-11-19</span><span class="tag">cs.LG</span></div>
+<details><summary>摘要</summary><div class="abs">Accurate mobile traffic forecasting is crucial for network service management, supporting proactive capacity provisioning, congestion mitigation, and energy-efficient operation. However, many cities and regions are data-scarce (e.g., newly deployed or poorly instrumented areas), thus making traffic prediction a few-shot learning problem and limiting the practicality of standard data-driven models. Existing cross-city solutions primarily rely on data-space alignment to match traffic distributions between data-rich and data-scarce cities, but such alignment is often brittle under real-world distribution shifts, measurement noise, and city-specific bias. To address these limitations, we propose a Conditional Diffusion-based Parameter Generation (CDPG) framework. Instead of aligning raw data, CDPG learns the conditional distribution of high-performing predictor parameters for source cities and directly generates node-specific model parameters for the target city. To support reliable adaptation for network traffic prediction, CDPG conditions parameter generation on multi-modal spatio-temporal context. Specifically, CDPG captures spatial environment cues by combining satellite imagery with large language model (LLM)-derived semantic descriptions, and summarizes complex temporal behaviors via unsupervised pattern clustering. These contextual components guide CDPG in producing parameters tailored to each base station's operational context, thereby improving robustness under cross-city and cross-region shifts. Extensive experiments on three large-scale datasets show that CDPG consistently outperforms state-of-the-art cross-city few-shot baselines by up to 9.72% on standard forecasting metrics and remains robust for few-shot multi-step prediction. The code is available at https://github.com/LingoodBoy/CDPG.</div></details>
+<div class="links"><a href="http://arxiv.org/abs/2611.25592v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2611.25592v1" target="_blank">PDF</a></div>
+</div>
 <h2>可解释性 × 交通（SHAP）（0 篇）</h2>
 <div class="empty">近 7 天没有新论文</div>
 <footer>由 GitHub Actions 每日自动抓取生成 · 关键词可在仓库 scripts/fetch_arxiv.py 中修改</footer>
