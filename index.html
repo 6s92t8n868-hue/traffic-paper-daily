@@ -38,11 +38,11 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <p class="meta">事故预测 · 道路安全 · 交通预测 · SHAP 可解释性 &nbsp;|&nbsp; 数据源 arXiv，每日自动更新</p>
 
 <div class="stats">
-<div class="stat"><b>3</b>近 7 天论文总数</div>
+<div class="stat"><b>4</b>近 7 天论文总数</div>
 <div class="stat"><b>2</b>交通事故与道路安全</div>
-<div class="stat"><b>1</b>交通预测</div>
+<div class="stat"><b>2</b>交通预测</div>
 <div class="stat"><b>0</b>可解释性 × 交通（SHAP）</div>
-<div class="stat"><b>2026-11-22</b>最后更新</div>
+<div class="stat"><b>2026-11-23</b>最后更新</div>
 </div>
 <h2>交通事故与道路安全（2 篇）</h2>
 <div class="paper">
@@ -59,7 +59,14 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <details><summary>摘要</summary><div class="abs">Cooperative driving extends autonomous driving from individual vehicle decisions to joint maneuvers that improve traffic safety and efficiency. Optimization-based methods impose safety constraints but often fix paths to simplify multi-vehicle planning, limiting spatial flexibility. Multi-agent reinforcement learning (MARL) explores alternatives through interaction, but coordinated learning and safe execution remain challenging. Their integration nevertheless faces challenges in exploration efficiency, experience allocation, and execution reliability. To address these challenges, this paper proposes CoopDistill, an equilibrium-guided multi-agent policy distillation framework. A potential-game (PG) formulation provides a fixed-path longitudinal reference, around which a residual MARL policy learns longitudinal acceleration, conflict-approach timing, and lateral path corrections. A hard-case curriculum concentrates experience on interactions that PG leaves unresolved or substantially delayed. A comparative rollout selector evaluates the joint consequences of learned corrections against PG before choosing the executed action. Experiments in merging, roundabout, and intersection scenarios compare CoopDistill with six baselines at four connected automated vehicle penetration levels. Relative to PG, success improves by 2.1--27.1 percentage points and delay decreases by 7.3--27.3\%, with no observed collisions. Code is available at https://github.com/FanGShiYuu/CoopDistill</div></details>
 <div class="links"><a href="http://arxiv.org/abs/2611.21069v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2611.21069v1" target="_blank">PDF</a></div>
 </div>
-<h2>交通预测（1 篇）</h2>
+<h2>交通预测（2 篇）</h2>
+<div class="paper">
+<h3><a href="http://arxiv.org/abs/2611.26847v1" target="_blank">A Sparsity Analysis of Traffic Forecasting Architectures: How Much Missing Data is Too Much?</a></h3>
+<div class="authors">Mohamed Hamad, Bilal Mutahir, Mohamed Mabrok, Nizar Zorba 等</div>
+<div class="tags"><span class="tag date">2026-11-19</span><span class="tag">cs.LG</span></div>
+<details><summary>摘要</summary><div class="abs">Traffic forecasting models are typically evaluated under ideal conditions with complete data. This evaluation does not reflect the frequent sensor failures and communication outages common in real-world deployments. This paper presents a comprehensive analysis of multivariate traffic prediction models to evaluate their performance under varying levels of sensor data loss during inference. We benchmark several architectural paradigms, including graph neural networks, attention-based Transformers, and selective state-space models, across sparsity levels ranging from zero to complete sensor loss, using two widely used multi-channel traffic benchmarks. To ensure consistent comparison across traffic variables, we use normalized metrics and define a usability threshold to identify when predictions become unreliable. Our results show a clear trade-off between baseline accuracy and robustness: models with the highest accuracy under full-data conditions often degrade most sharply as data becomes sparse, while less accurate models maintain more stable performance. These findings show that model selection should be based on the expected reliability of the sensor network rather than peak accuracy alone. This work provides a practical framework for assessing traffic forecasting models and highlights the importance of robustness in real-world applications.</div></details>
+<div class="links"><a href="http://arxiv.org/abs/2611.26847v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2611.26847v1" target="_blank">PDF</a></div>
+</div>
 <div class="paper">
 <h3><a href="http://arxiv.org/abs/2611.25592v1" target="_blank">From Data Alignment to Parameter Generation: Few-Shot Cross-City Traffic Prediction with Conditional Diffusion</a></h3>
 <div class="authors">Shengchun Wang, Yuhang Lin, Tong Li, Pengyuan Zhou 等</div>
