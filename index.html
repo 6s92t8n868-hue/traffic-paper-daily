@@ -38,42 +38,16 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <p class="meta">事故预测 · 道路安全 · 交通预测 · SHAP 可解释性 &nbsp;|&nbsp; 数据源 arXiv，每日自动更新</p>
 
 <div class="stats">
-<div class="stat"><b>4</b>近 7 天论文总数</div>
-<div class="stat"><b>2</b>交通事故与道路安全</div>
-<div class="stat"><b>2</b>交通预测</div>
+<div class="stat"><b>0</b>近 7 天论文总数</div>
+<div class="stat"><b>0</b>交通事故与道路安全</div>
+<div class="stat"><b>0</b>交通预测</div>
 <div class="stat"><b>0</b>可解释性 × 交通（SHAP）</div>
-<div class="stat"><b>2026-11-23</b>最后更新</div>
+<div class="stat"><b>2026-11-24</b>最后更新</div>
 </div>
-<h2>交通事故与道路安全（2 篇）</h2>
-<div class="paper">
-<h3><a href="http://arxiv.org/abs/2611.22884v1" target="_blank">RoadAnnoter: An AI-Assisted Desktop Tool for Semantic Segmentation Annotation of Road-Scene Images</a></h3>
-<div class="authors">Nazmul Haque, Arnob Protim Roy</div>
-<div class="tags"><span class="tag date">2026-11-17</span><span class="tag">cs.CV</span></div>
-<details><summary>摘要</summary><div class="abs">Accurate semantic segmentation of road-scene images is essential for road safety research; however, polygon-level annotation remains labor-intensive and limits labelled dataset development. This study presents RoadAnnoter v1.0, an open-source desktop application integrating six human-in-the-loop annotation modes: manual polygon delineation, SAM Prompt, Smart Select, Edge Fill, pretrained semantic segmentation using Cityscapes-trained SegFormer models, and task-specific segmentation using TinySegNet, a lightweight MobileNetV3-Small-based network trained with accumulated annotator-generated labels. SAM-based modes use promptable segmentation with SAM and MobileSAM, while Edge Fill combines Canny edge detection with colour-similarity-based flood filling in CIELAB colour space. SegFormer generates suggestions for common road-scene categories, whereas TinySegNet supports adaptation to project-specific features through iterative training. All six modes use a shared mask-to-polygon pipeline comprising morphological processing, Gaussian smoothing, contour extraction, and Douglas-Peucker simplification; annotations are exported in YOLO segmentation format. RoadAnnoter was used to annotate Google Street View images from recorded road accident locations in Bangladesh for a vision-language model-based investigation of free-flow speed estimation. Qualitative assessment across representative scenes demonstrated the complementary applicability of the annotation modes to diverse feature geometries. Visual comparison with Roboflow indicated similar qualitative boundary characteristics for principal road-scene regions, although no quantitative accuracy assessment was conducted. RoadAnnoter provides a locally operated framework for developing road-scene segmentation datasets for transportation engineering and road safety research.</div></details>
-<div class="links"><a href="http://arxiv.org/abs/2611.22884v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2611.22884v1" target="_blank">PDF</a></div>
-</div>
-<div class="paper">
-<h3><a href="http://arxiv.org/abs/2611.21069v1" target="_blank">CoopDistill: Equilibrium-Guided Multi-Agent Policy Distillation for Cooperative Driving</a></h3>
-<div class="authors">Shiyu Fang, Sheng Zhao, Jiarui Zhang, Chengkai Xu 等</div>
-<div class="tags"><span class="tag date">2026-11-16</span><span class="tag">cs.RO</span><span class="tag">cs.MA</span></div>
-<details><summary>摘要</summary><div class="abs">Cooperative driving extends autonomous driving from individual vehicle decisions to joint maneuvers that improve traffic safety and efficiency. Optimization-based methods impose safety constraints but often fix paths to simplify multi-vehicle planning, limiting spatial flexibility. Multi-agent reinforcement learning (MARL) explores alternatives through interaction, but coordinated learning and safe execution remain challenging. Their integration nevertheless faces challenges in exploration efficiency, experience allocation, and execution reliability. To address these challenges, this paper proposes CoopDistill, an equilibrium-guided multi-agent policy distillation framework. A potential-game (PG) formulation provides a fixed-path longitudinal reference, around which a residual MARL policy learns longitudinal acceleration, conflict-approach timing, and lateral path corrections. A hard-case curriculum concentrates experience on interactions that PG leaves unresolved or substantially delayed. A comparative rollout selector evaluates the joint consequences of learned corrections against PG before choosing the executed action. Experiments in merging, roundabout, and intersection scenarios compare CoopDistill with six baselines at four connected automated vehicle penetration levels. Relative to PG, success improves by 2.1--27.1 percentage points and delay decreases by 7.3--27.3\%, with no observed collisions. Code is available at https://github.com/FanGShiYuu/CoopDistill</div></details>
-<div class="links"><a href="http://arxiv.org/abs/2611.21069v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2611.21069v1" target="_blank">PDF</a></div>
-</div>
-<h2>交通预测（2 篇）</h2>
-<div class="paper">
-<h3><a href="http://arxiv.org/abs/2611.26847v1" target="_blank">A Sparsity Analysis of Traffic Forecasting Architectures: How Much Missing Data is Too Much?</a></h3>
-<div class="authors">Mohamed Hamad, Bilal Mutahir, Mohamed Mabrok, Nizar Zorba 等</div>
-<div class="tags"><span class="tag date">2026-11-19</span><span class="tag">cs.LG</span></div>
-<details><summary>摘要</summary><div class="abs">Traffic forecasting models are typically evaluated under ideal conditions with complete data. This evaluation does not reflect the frequent sensor failures and communication outages common in real-world deployments. This paper presents a comprehensive analysis of multivariate traffic prediction models to evaluate their performance under varying levels of sensor data loss during inference. We benchmark several architectural paradigms, including graph neural networks, attention-based Transformers, and selective state-space models, across sparsity levels ranging from zero to complete sensor loss, using two widely used multi-channel traffic benchmarks. To ensure consistent comparison across traffic variables, we use normalized metrics and define a usability threshold to identify when predictions become unreliable. Our results show a clear trade-off between baseline accuracy and robustness: models with the highest accuracy under full-data conditions often degrade most sharply as data becomes sparse, while less accurate models maintain more stable performance. These findings show that model selection should be based on the expected reliability of the sensor network rather than peak accuracy alone. This work provides a practical framework for assessing traffic forecasting models and highlights the importance of robustness in real-world applications.</div></details>
-<div class="links"><a href="http://arxiv.org/abs/2611.26847v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2611.26847v1" target="_blank">PDF</a></div>
-</div>
-<div class="paper">
-<h3><a href="http://arxiv.org/abs/2611.25592v1" target="_blank">From Data Alignment to Parameter Generation: Few-Shot Cross-City Traffic Prediction with Conditional Diffusion</a></h3>
-<div class="authors">Shengchun Wang, Yuhang Lin, Tong Li, Pengyuan Zhou 等</div>
-<div class="tags"><span class="tag date">2026-11-19</span><span class="tag">cs.LG</span></div>
-<details><summary>摘要</summary><div class="abs">Accurate mobile traffic forecasting is crucial for network service management, supporting proactive capacity provisioning, congestion mitigation, and energy-efficient operation. However, many cities and regions are data-scarce (e.g., newly deployed or poorly instrumented areas), thus making traffic prediction a few-shot learning problem and limiting the practicality of standard data-driven models. Existing cross-city solutions primarily rely on data-space alignment to match traffic distributions between data-rich and data-scarce cities, but such alignment is often brittle under real-world distribution shifts, measurement noise, and city-specific bias. To address these limitations, we propose a Conditional Diffusion-based Parameter Generation (CDPG) framework. Instead of aligning raw data, CDPG learns the conditional distribution of high-performing predictor parameters for source cities and directly generates node-specific model parameters for the target city. To support reliable adaptation for network traffic prediction, CDPG conditions parameter generation on multi-modal spatio-temporal context. Specifically, CDPG captures spatial environment cues by combining satellite imagery with large language model (LLM)-derived semantic descriptions, and summarizes complex temporal behaviors via unsupervised pattern clustering. These contextual components guide CDPG in producing parameters tailored to each base station's operational context, thereby improving robustness under cross-city and cross-region shifts. Extensive experiments on three large-scale datasets show that CDPG consistently outperforms state-of-the-art cross-city few-shot baselines by up to 9.72% on standard forecasting metrics and remains robust for few-shot multi-step prediction. The code is available at https://github.com/LingoodBoy/CDPG.</div></details>
-<div class="links"><a href="http://arxiv.org/abs/2611.25592v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2611.25592v1" target="_blank">PDF</a></div>
-</div>
+<h2>交通事故与道路安全（0 篇）</h2>
+<div class="empty">近 7 天没有新论文</div>
+<h2>交通预测（0 篇）</h2>
+<div class="empty">近 7 天没有新论文</div>
 <h2>可解释性 × 交通（SHAP）（0 篇）</h2>
 <div class="empty">近 7 天没有新论文</div>
 <footer>由 GitHub Actions 每日自动抓取生成 · 关键词可在仓库 scripts/fetch_arxiv.py 中修改</footer>
