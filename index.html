@@ -38,16 +38,43 @@ footer{margin-top:40px;color:var(--sub);font-size:12px;text-align:center;}
 <p class="meta">事故预测 · 道路安全 · 交通预测 · SHAP 可解释性 &nbsp;|&nbsp; 数据源 arXiv，每日自动更新</p>
 
 <div class="stats">
-<div class="stat"><b>0</b>近 7 天论文总数</div>
+<div class="stat"><b>4</b>近 7 天论文总数</div>
 <div class="stat"><b>0</b>交通事故与道路安全</div>
-<div class="stat"><b>0</b>交通预测</div>
+<div class="stat"><b>4</b>交通预测</div>
 <div class="stat"><b>0</b>可解释性 × 交通（SHAP）</div>
-<div class="stat"><b>2026-11-24</b>最后更新</div>
+<div class="stat"><b>2026-11-25</b>最后更新</div>
 </div>
 <h2>交通事故与道路安全（0 篇）</h2>
 <div class="empty">近 7 天没有新论文</div>
-<h2>交通预测（0 篇）</h2>
-<div class="empty">近 7 天没有新论文</div>
+<h2>交通预测（4 篇）</h2>
+<div class="paper">
+<h3><a href="http://arxiv.org/abs/2611.31479v1" target="_blank">Transferable, Time-Parallel Graph Dynamics via Space-Time Factorization</a></h3>
+<div class="authors">Wencong Yang, Chaopeng Shen, Abdolmehdi Behroozi</div>
+<div class="tags"><span class="tag date">2026-11-23</span><span class="tag">cs.LG</span><span class="tag">physics.geo-ph</span></div>
+<details><summary>摘要</summary><div class="abs">Time-parallel neural operators (FNO and successors) have transformed PDE surrogates on regular grids. Mesh-based operators (MeshGraphNets, Transolver) extend operator learning to irregular geometries, but jointly learning across diverse topologies while retaining non-recurrent temporal evaluation remains challenging. We propose space-time factorization: partition the model into local temporal operators (learned, graph-independent) and a spatial mixer that propagates information across nodes without graph-dependent learned parameters. This structural condition lets the same parameters run on unseen graphs; non-recurrent instances also admit time-parallel evaluation. Accurate zero-shot transfer further depends on controlling three information leaks (graph-dependent weights, graph-specific features, and graph-correlated training distributions) and on suitable task physics and training coverage. The protocol applies to two distinct spatial-mixer families, fixed-spectral and learned-attention. We validate the principle in three domains. For floodwave propagation in river networks, a 27K-parameter model trained on the Yangtze transfers zero-shot to the Mississippi with median NSE 0.998 in boundary-conditioned operational evaluation, training 5.5x faster than a stabilized recurrent baseline. On cross-geometry Navier-Stokes, the three-seed SepFNO mean relative vorticity error on five unseen targets falls by about 28% from 5 to 12 training geometries, with a consistent single-run SepTransolver trend. On cross-city traffic forecasting, zero-shot transfer reaches within 12.9% of an oracle trained on the target city. Across settings, cross-geometry error decreases with both the number of training geometries and their relatedness to the test, at a rate depending on the spatial mixer. This opens the path to pooled-data, foundation-style models for graph dynamics on irregular topologies.</div></details>
+<div class="links"><a href="http://arxiv.org/abs/2611.31479v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2611.31479v1" target="_blank">PDF</a></div>
+</div>
+<div class="paper">
+<h3><a href="http://arxiv.org/abs/2611.30148v1" target="_blank">STMemoLLM: A Spatial-Temporal Memory-Augmented LLM for Robust Traffic Forecasting</a></h3>
+<div class="authors">Jian Zhou, Binqing Wu, Zongjiang Shang, Wanghui Qiu 等</div>
+<div class="tags"><span class="tag date">2026-11-23</span><span class="tag">cs.LG</span></div>
+<details><summary>摘要</summary><div class="abs">Traffic forecasting is essential for intelligent transportation systems. However, traditional deep-learning models often rely heavily on high-quality observations. Recent LLM-based approaches incorporate pretrained knowledge to improve forecasting, but they remain sensitive to input perturbations and struggle to preserve long-term patterns. To address this, we propose STMemoLLM, a spatial-temporal memory-augmented LLM for robust traffic forecasting. STMemoLLM introduces memory prototypes to compress inputs into compact summary tokens while extracting reliable dynamics from residual signals, achieving a balance between stability and variability. Specifically, a memory-enhanced tokenizer encodes prototypes and sensor characteristics into attention biases to guide adaptive compression of correlated sensors into semantic summary tokens. A memory-calibrated router further evaluates contextual deviation, compression deficiency, and prototype alignment to identify reliable residual signals, which complement the summaries while suppressing noise. Extensive experiments on eight real-world datasets show that STMemoLLM achieves state-of-the-art performance. Additional experiments examine point masking, additive Gaussian noise, structured missingness, and limited training data, demonstrating strong robustness. Code is available at https://anonymous.4open.science/r/STMemoLLM-70BF.</div></details>
+<div class="links"><a href="http://arxiv.org/abs/2611.30148v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2611.30148v1" target="_blank">PDF</a></div>
+</div>
+<div class="paper">
+<h3><a href="http://arxiv.org/abs/2611.26847v1" target="_blank">A Sparsity Analysis of Traffic Forecasting Architectures: How Much Missing Data is Too Much?</a></h3>
+<div class="authors">Mohamed Hamad, Bilal Mutahir, Mohamed Mabrok, Nizar Zorba 等</div>
+<div class="tags"><span class="tag date">2026-11-19</span><span class="tag">cs.LG</span></div>
+<details><summary>摘要</summary><div class="abs">Traffic forecasting models are typically evaluated under ideal conditions with complete data. This evaluation does not reflect the frequent sensor failures and communication outages common in real-world deployments. This paper presents a comprehensive analysis of multivariate traffic prediction models to evaluate their performance under varying levels of sensor data loss during inference. We benchmark several architectural paradigms, including graph neural networks, attention-based Transformers, and selective state-space models, across sparsity levels ranging from zero to complete sensor loss, using two widely used multi-channel traffic benchmarks. To ensure consistent comparison across traffic variables, we use normalized metrics and define a usability threshold to identify when predictions become unreliable. Our results show a clear trade-off between baseline accuracy and robustness: models with the highest accuracy under full-data conditions often degrade most sharply as data becomes sparse, while less accurate models maintain more stable performance. These findings show that model selection should be based on the expected reliability of the sensor network rather than peak accuracy alone. This work provides a practical framework for assessing traffic forecasting models and highlights the importance of robustness in real-world applications.</div></details>
+<div class="links"><a href="http://arxiv.org/abs/2611.26847v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2611.26847v1" target="_blank">PDF</a></div>
+</div>
+<div class="paper">
+<h3><a href="http://arxiv.org/abs/2611.25592v1" target="_blank">From Data Alignment to Parameter Generation: Few-Shot Cross-City Traffic Prediction with Conditional Diffusion</a></h3>
+<div class="authors">Shengchun Wang, Yuhang Lin, Tong Li, Pengyuan Zhou 等</div>
+<div class="tags"><span class="tag date">2026-11-19</span><span class="tag">cs.LG</span></div>
+<details><summary>摘要</summary><div class="abs">Accurate mobile traffic forecasting is crucial for network service management, supporting proactive capacity provisioning, congestion mitigation, and energy-efficient operation. However, many cities and regions are data-scarce (e.g., newly deployed or poorly instrumented areas), thus making traffic prediction a few-shot learning problem and limiting the practicality of standard data-driven models. Existing cross-city solutions primarily rely on data-space alignment to match traffic distributions between data-rich and data-scarce cities, but such alignment is often brittle under real-world distribution shifts, measurement noise, and city-specific bias. To address these limitations, we propose a Conditional Diffusion-based Parameter Generation (CDPG) framework. Instead of aligning raw data, CDPG learns the conditional distribution of high-performing predictor parameters for source cities and directly generates node-specific model parameters for the target city. To support reliable adaptation for network traffic prediction, CDPG conditions parameter generation on multi-modal spatio-temporal context. Specifically, CDPG captures spatial environment cues by combining satellite imagery with large language model (LLM)-derived semantic descriptions, and summarizes complex temporal behaviors via unsupervised pattern clustering. These contextual components guide CDPG in producing parameters tailored to each base station's operational context, thereby improving robustness under cross-city and cross-region shifts. Extensive experiments on three large-scale datasets show that CDPG consistently outperforms state-of-the-art cross-city few-shot baselines by up to 9.72% on standard forecasting metrics and remains robust for few-shot multi-step prediction. The code is available at https://github.com/LingoodBoy/CDPG.</div></details>
+<div class="links"><a href="http://arxiv.org/abs/2611.25592v1" target="_blank">arXiv 页面</a><a href="https://arxiv.org/pdf/2611.25592v1" target="_blank">PDF</a></div>
+</div>
 <h2>可解释性 × 交通（SHAP）（0 篇）</h2>
 <div class="empty">近 7 天没有新论文</div>
 <footer>由 GitHub Actions 每日自动抓取生成 · 关键词可在仓库 scripts/fetch_arxiv.py 中修改</footer>
